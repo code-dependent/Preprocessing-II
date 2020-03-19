@@ -1,1 +1,40 @@
 // Navigation Styles here
+.header{
+
+
+    .navBar{
+        border-bottom: 2px dashed @navigation-border;
+        height:12vh;
+        display:flex;
+        align-items: center;
+        @media @phone{
+            flex-direction: ;
+          }
+
+        .centeringNav{
+            .flex(space-between, center);
+            @media @phone{
+                flex-direction: column ;
+              }
+            
+
+        }
+    } //navBar End
+
+    .navigation{
+        .flex(space-around,center);
+        width: 40%;
+        a{
+            text-decoration: none;
+            color: black;
+            display: inline-flex;
+            font-size: 140%;
+            @media @phone{
+                justify-content: space-around;
+              }
+        }
+    @media @phone{
+        width:100%;
+        } 
+    }
+}//header End
